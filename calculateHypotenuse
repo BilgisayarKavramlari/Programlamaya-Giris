@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+/**
+ * Created by ahmetturkmen on 1/15/17.
+ */
+
+public class calculateHypotenuse {
+
+    public static void main(String[] args) {
+
+        int birinciKenar, ikinciKenar, hypotenuse;
+        Scanner read = new Scanner(System.in);
+        birinciKenar = read.nextInt();
+        ikinciKenar = read.nextInt();
+        hypotenuse = (int) Math.sqrt(Math.pow(birinciKenar, 2) + Math.pow(ikinciKenar, 2));
+        System.out.printf("Birinci Kenar: %d \nikinci kenar : %d \nHipotenus: %d", birinciKenar, ikinciKenar, hypotenuse);
+    }
+}

@@ -2,8 +2,7 @@ x = int(input('İlk sayıyı giriniz: '))
 y = int(input('İkinci sayıyı giriniz: '))
 z = int(input('Üçüncü sayıyı giriniz: '))
 
-eb = x
-ek = x
+eb = ek = x
 for n in x,y,z:
     if n > eb:
         eb = n

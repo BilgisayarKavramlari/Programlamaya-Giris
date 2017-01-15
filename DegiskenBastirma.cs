@@ -1,4 +1,4 @@
-class DegiskenBastirma
+class Program
     {
         /// <summary>
         /// Değişkeni Konsola Yazdıran C# Kod Örneği

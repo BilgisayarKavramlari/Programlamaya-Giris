@@ -1,4 +1,4 @@
-class MerhabaDunya
+class Program
     {
         /// <summary>
         /// Konsola Merhaba Dünya yazan C# kod örneği

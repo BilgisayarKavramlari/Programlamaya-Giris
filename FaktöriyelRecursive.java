@@ -16,17 +16,13 @@ public class FaktöriyelRecursive {
         System.out.printf("Bir sayi giriniz: ");
         int n = read.nextInt();
 
-        System.out.println("Faktöriyeli: " + fibonacci(n));
+        System.out.println("Faktöriyeli: " + factorial(n));
 
 
     }
 
-    public static int fibonacci(int n) {
-
-        for (int i = 1; i <= n; i++) {
-            sum *= i;
-        }
-        return sum;
-
+    public static long factorial(int n) {
+        if (n == 1) return 1;
+        return n * factorial(n-1);
     }
 }

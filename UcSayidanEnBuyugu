@@ -1,0 +1,36 @@
+package ucsayidanenbuyugu;
+
+import java.util.Scanner;
+
+public class UcSayidanEnBuyugu {
+
+    public static void main(String[] args) {
+        Scanner oku = new Scanner(System.in);
+        int sayi1, sayi2, sayi3;
+        System.out.print("1. Sayıyı Giriniz: ");
+        sayi1 = oku.nextInt();
+        System.out.print("2. Sayıyı Giriniz: ");
+        sayi2 = oku.nextInt();
+        System.out.print("3. Sayıyı Giriniz: ");
+        sayi3 = oku.nextInt();
+        int buyuksayi = sayi1;
+        int kucuksayi = sayi1;
+        if (sayi2 > buyuksayi) {
+            buyuksayi = sayi2;
+        }
+
+        if (sayi3 > buyuksayi) {
+            buyuksayi = sayi3;
+        }
+        if (sayi2 < kucuksayi) {
+            kucuksayi = sayi2;
+        }
+        if (sayi3 < kucuksayi) {
+            kucuksayi = sayi3;
+        }
+        System.out.println("En Büyük Sayı: " + buyuksayi);
+        System.out.print("En Küçük Sayı: " + kucuksayi);
+
+    }
+
+}

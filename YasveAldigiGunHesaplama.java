@@ -41,7 +41,6 @@ public class YasveAldigiGunHesaplama {
     
     //Burada kullanıcının yaşı, mevcut yıl - doğum yılı işlemi yapılarak bulunur. Kod bloğunun çalıştığı anda, kullanıcının doğdu ay ve gün 
     //henüz gelmemiş ise yaşını bir eksiltip, hangi yaşta gün aldığını ekrana yazılması için if-else kullanıldı.
-    int hesaplamaYap = (yiliDonustur - dogumYili); 
     if (ayiDonustur <= dogumAyi || gunuDonustur <= dogumGunu)
        {
            int yiliHesapla = ((yiliDonustur - dogumYili-1));

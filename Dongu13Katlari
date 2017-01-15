@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#python3
+
+
+#range() fonksiyonu ile elemanları 1 ile 100 arasındaki sayılardan oluşan bir dizi oluşturduk. (liste)
+#reversed() fonksiyonu ile dizinin içindeki sıralamayı ters çevirdik
+#for döngüsü ile dizi elemanlarını teker teker sayi değişkenine atadık.
+# % işleci ile sayının mod13 işleminde verdiği değeri aldık.
+# Eğer bu değer 0 a eşit ise, bu sayıyı ekrana basmasını istedik.
+
+for sayi in reversed(range(1,101)): 
+	if sayi%13 == 0:
+		print(sayi)

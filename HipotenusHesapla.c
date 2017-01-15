@@ -9,6 +9,6 @@ int main(){
 	printf("ikinci kenar: ");
 	int ikinci;
 	scanf("%d",&ikinci);
-	printf("hipotenus: ",sqrt((birinci*birinci)+(ikinci*ikinci)));
+	printf("hipotenus: %d",sqrt((birinci*birinci)+(ikinci*ikinci)));
 	getch();
 }

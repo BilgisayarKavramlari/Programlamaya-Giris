@@ -4,7 +4,7 @@ class Program
 {
     static int faktoriyel(int sayi)
     {
-        return (sayi == 0) ? 1 : faktoriyel(sayi - 1) * sayi;
+        return (sayi <= 1) ? 1 : faktoriyel(sayi - 1) * sayi;
     }
 
     static void Main(string[] args)

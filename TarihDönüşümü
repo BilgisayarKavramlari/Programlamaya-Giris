@@ -1,0 +1,6 @@
+(GUN1,GUN2,B,AY1,AY2,D,YIL1,YIL2,YIL3,YIL4)=input("Tarihi Gün-Ay-Yıl Olarak Giriniz ! (Format (04.03.1999) şeklinde olmalı)")
+GUN=GUN1+GUN2
+AY=AY1+AY2
+YIL=YIL1+YIL2+YIL3+YIL4
+print(AY+"."+GUN+"."+YIL)
+print(YIL+"."+AY+"."+GUN)

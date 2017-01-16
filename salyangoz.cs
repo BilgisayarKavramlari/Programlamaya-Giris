@@ -21,7 +21,7 @@ class Program
         //Burada boyut sayısı kadar döngü tekrar ettiğinde salyangoz tamamlanıyor.
         for (int i = 0; i < boyut; i++)
         {
-            //apsis ve ordinat gezginlerinin arttırılmadan önceki değerleri atanıyor.
+            //apsis ve ordinat gezginlerinin arttırılma veya azaltmadan önceki değerleri atıyoruz.
             matris[apsisGezgini, ordinatGezgini] = toplam;
 
             if (arttir) //Bu alanda hem apsis hem ordinat gezginlerinin değerleri max alabilecekleri kadar arttırılıyor.
@@ -29,19 +29,13 @@ class Program
                 //Arttırma işlemi yapmak için bir sonraki koordinatın dolu olup olmadığına bakıyoruz.
                 while (apsisGezgini + 1 < boyut && matris[apsisGezgini + 1, ordinatGezgini] == 0)
                 {
-                    apsisGezgini++; //apsisGezginini 1 arttırıyoruz.
-                    toplam++;       //toplam değişkenini 1 arttırıyoruz.
-
-                    //Matrisimizde şuandaki noktanın değeri 'toplam' değişkenine eşit olduğu için 
-                    //gerekli atamayı yapıyoruz.
-                    matris[apsisGezgini, ordinatGezgini] = toplam;
+                    //Apsis gezginimizi ve toplam değişkenimizi 1 arttırıp gerekli atamayı yapıyoruz.
+                    matris[++apsisGezgini, ordinatGezgini] = ++toplam;
                 }
                 //Bir üstteki işlemin aynısı ordinat gezgini için yapılıyor.
                 while (ordinatGezgini + 1 < boyut && matris[apsisGezgini, ordinatGezgini + 1] == 0)
                 {
-                    ordinatGezgini++;
-                    toplam++;
-                    matris[apsisGezgini, ordinatGezgini] = toplam;
+                    matris[apsisGezgini, ++ordinatGezgini] = ++toplam;
                 }
             }
             else //Bu alanda hem apsis hem ordinat gezginlerinin değerleri minimum alabilecekleri kadar azaltıyoruz.
@@ -49,19 +43,13 @@ class Program
                 //Azaltma işlemi yapmak için bir önceki koordinatın dolu olup olmadığına bakıyoruz.
                 while (apsisGezgini > 0 && matris[apsisGezgini - 1, ordinatGezgini] == 0)
                 {
-                    apsisGezgini--; //apsisGezginini 1 azaltıyoruz.
-                    toplam++;       //toplam değişkenini 1 arttırıyoruz.
-
-                    //Matrisimizde şuandaki noktanın değeri 'toplam' değişkenine eşit olduğu için 
-                    //gerekli atamayı yapıyoruz.
-                    matris[apsisGezgini, ordinatGezgini] = toplam;
+                    //Apsis gezginimizi azaltırken, toplam değişkenimizi 1 arttırıp gerekli atamayı yapıyoruz.
+                    matris[--apsisGezgini, ordinatGezgini] = ++toplam;
                 }
                 //Bir üstteki işlemin aynısı ordinat gezgini için yapılıyor.
                 while (ordinatGezgini > 0 && matris[apsisGezgini, ordinatGezgini - 1] == 0)
                 {
-                    ordinatGezgini--;
-                    toplam++;
-                    matris[apsisGezgini, ordinatGezgini] = toplam;
+                    matris[apsisGezgini, --ordinatGezgini] = ++toplam;
                 }
             }
             //arttir değişkeninin tersini alıyoruz ki üstteki if yapısının blokları sırasıyla işlesin.

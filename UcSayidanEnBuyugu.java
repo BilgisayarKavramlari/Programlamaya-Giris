@@ -13,24 +13,23 @@ public class UcSayidanEnBuyugu {
         sayi2 = oku.nextInt();
         System.out.print("3. Sayıyı Giriniz: ");
         sayi3 = oku.nextInt();
-        int buyuksayi = sayi1;
-        int kucuksayi = sayi1;
-        if (sayi2 > buyuksayi) {
+        int buyuksayi = sayi1, kucuksayi = sayi1;
+
+        if (sayi3 > sayi2 && sayi3 > sayi1) {
+            buyuksayi = sayi3;
+        } else if (sayi2 > sayi3 && sayi2 > sayi1) {
             buyuksayi = sayi2;
         }
 
-        if (sayi3 > buyuksayi) {
-            buyuksayi = sayi3;
-        }
-        if (sayi2 < kucuksayi) {
+        if (sayi2 < sayi1 && sayi2 < sayi3) {
             kucuksayi = sayi2;
-        }
-        if (sayi3 < kucuksayi) {
+        } else if (sayi3 < sayi1 && sayi3 < sayi2) {
             kucuksayi = sayi3;
+
         }
+
         System.out.println("En Büyük Sayı: " + buyuksayi);
         System.out.print("En Küçük Sayı: " + kucuksayi);
-
     }
 
 }

@@ -1,0 +1,7 @@
+x= int(input("[a*x^2 + b*x + c] polinomu için x Değerini Giriniz !"))
+a= int(input("[a*x^2 + b*x + c] polinomu için a Değerini Giriniz !"))
+b= int(input("[a*x^2 + b*x + c] polinomu için b Değerini Giriniz !"))
+c= int(input("[a*x^2 + b*x + c] polinomu için c Değerini Giriniz !"))
+
+sonuc = a*x*x+b*x+c
+print(sonuc)

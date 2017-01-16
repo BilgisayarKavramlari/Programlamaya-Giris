@@ -1,5 +1,5 @@
 """
-sadi hocanın öreniğinden farklı olarak
+yüklenen diğer örnekten farklı olarak
 önce kolon kolon verileri elde edip
 daha sonra satırlara geçirdim
 """

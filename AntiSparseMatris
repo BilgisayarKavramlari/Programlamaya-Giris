@@ -1,0 +1,25 @@
+
+package anti.sparse.matris;
+
+import java.util.Scanner;
+
+public class AntiSparseMatris {
+
+   public static void main(String[] args) {
+        int x;
+        System.out.println("Matris Boyutunu Giriniz.");
+        Scanner y = new Scanner(System.in);
+        x =y.nextInt();
+        for(int i=0;i<x;i++){
+            System.out.println(" ");
+            for(int q=0;q<x;q++){
+                if(q+i==(x-1))
+                    System.out.print("1");
+                else
+                    System.out.print("0");
+            }
+        }
+        System.out.println(" ");
+    }
+    
+}

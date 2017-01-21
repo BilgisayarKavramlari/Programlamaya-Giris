@@ -25,8 +25,8 @@ namespace ConsoleApplication2
             else if (y >= x && y >= z) enb = y;         // y , z ve x den buyuk ve esit ise en buyuk y
             else enb = z;                               // diger tum durumlarda en buyuk z
 
-            if (x < y && x < z) enk = x;                 // x , y ve z den kucuk ise en kucuk x
-            else if (y < x && y < z) enk = y;            // y , z ve x den kucuk ise en kucuk y
+            if (x <= y && x <= z) enk = x;                 // x , y ve z den kucuk ise en kucuk x
+            else if (y <= x && y <= z) enk = y;            // y , z ve x den kucuk ise en kucuk y
             else enk = z;                                // diger tum durumlarda en kucuk z
 
             Console.WriteLine("En buyuk : "+ enb);

@@ -29,7 +29,7 @@ int main()
     int yaziUzunlugu;
     printf("Yazının uzunluğunu giriniz: ");
     fscanf(stdin,"%u",&yaziUzunlugu);
-    getc(stdin);
+    fgetc(stdin);
     char *tut = yaziGirisi(yaziUzunlugu);
     for(int i = 0; i < yaziUzunlugu; i++)
     {

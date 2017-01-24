@@ -1,0 +1,47 @@
+#include "stdio.h"
+#include "conio.h"
+main()
+{
+    int s1,s2;
+    printf("Ilk sayiyi giriniz: ");scanf("%d",&s1);
+    printf("Ikinci sayiyi giriniz");scanf("%d",&s2);
+    if(s1==s2)
+    {
+        printf("sayilar esittir\n");
+    }
+        else 
+        {
+            printf("sayilar esit degildir\n");
+        }
+    
+    if(s1!=s2)
+    {
+        printf("sayilar farklidir\n");
+    }
+        else
+        {
+            printf("sayilar farkli degildir\n");
+        }
+    
+    if(s1<s2)
+    {
+        printf("ilk sayi kucuktur\n");
+
+    }    
+
+    else if (s1>s2)
+    {
+        printf("ikinci sayi kucuktur\n");
+    }
+
+    if(s1<=s2)
+    {
+        printf("ilk sayi kucuk esittir\n");
+    }
+
+    if(s1>=s2)
+    {
+        printf("ikinci sayi kucuk esittir\n");
+    }
+    getch();
+}

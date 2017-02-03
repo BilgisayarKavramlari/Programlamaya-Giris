@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IsciProblemi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int bitirmeSuresi;
+            int isciSayisi;
+
+            Console.WriteLine("Bir isci bir isi kac gunde bitiriyor ?");
+            bitirmeSuresi = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Kac isci calisacak ?");
+            isciSayisi = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{isciSayisi} isci bir isi {YeniSureyiHesapla(isciSayisi,bitirmeSuresi)} gunde bitirir.");
+
+            Console.ReadKey();
+        }
+
+        static int YeniSureyiHesapla(int isciSayisi,int bitirmeSuresi)
+        {
+            int yeniSure;
+            yeniSure = bitirmeSuresi / isciSayisi;
+
+
+            return yeniSure;
+        }
+    }
+}

@@ -1,6 +1,6 @@
-package yapsil;
+package bilgisayarkavramlari;
 import java.util.Scanner;
-public class Yapsil {
+public class BilgisayarKavramlari {
     public static void main(String[] args) {
         Scanner sayiGir = new Scanner(System.in);
         System.out.print("Birinci(a) sayıyı giriniz: ");

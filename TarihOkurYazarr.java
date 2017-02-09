@@ -1,6 +1,6 @@
 package bilgisayarkavramlari;
 import java.util.Scanner;
-public class bilgisayarkavramlari {
+public class BilgisayarKavramlari {
     public static void main(String[] args) {
         Scanner tarihGir = new Scanner(System.in);
         System.out.print("Lütfen günü giriniz: ");

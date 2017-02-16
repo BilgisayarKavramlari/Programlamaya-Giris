@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class EkrandanSayiOkuma {
+
+	public static void main(String[] args) {
+		Scanner sayi = new Scanner(System.in);
+		System.out.println("bir sayi giriniz");
+		int a = sayi.nextInt();
+		System.out.println("girdiginiz sayi : " + a);
+	}
+
+}

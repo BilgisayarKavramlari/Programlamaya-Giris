@@ -1,0 +1,4 @@
+bu_sene = int(input('Bu günün tarihi (yıl): '))
+dogumu = int(input('Yaşınız: '))
+
+print("Doğum yılınız : {}".format(bu_sene-dogumu))

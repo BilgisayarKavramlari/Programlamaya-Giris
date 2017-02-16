@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DikUcgenKontrolu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ilkKenar;
+            int ikinciKenar;
+            int ucuncuKenar;
+
+            Console.WriteLine("Birinci kenarı giriniz: ");
+            ilkKenar = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ikinci kenarı giriniz: ");
+            ikinciKenar = int.Parse(Console.ReadLine());
+            Console.WriteLine("Üçüncü kenarı giriniz: ");
+            ucuncuKenar = int.Parse(Console.ReadLine());
+
+            UcgeniKontrolEt(ilkKenar,ikinciKenar,ucuncuKenar);
+
+            Console.ReadKey();
+
+        }
+    
+
+        static void UcgeniKontrolEt(int x , int y, int z)
+        {
+            if((x * x) + (y * y) == z * z || Math.Abs((x * x) - (y * y)) == (z*z))
+            // Iki kenarin karesi diger kenarin karesine esit veya farklari o karenin mutlak degerine esitse
+                Console.WriteLine("Dik ucgendir");
+            else
+             Console.WriteLine("Dik ucgen degildir.");    
+        }
+
+    }
+}

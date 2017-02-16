@@ -1,0 +1,10 @@
+#include "stdio.h"
+main()
+{
+ int yol,hiz;
+ float sure;
+ printf("Km'yi giriniz: ");scanf("%d",&yol);
+ printf("Ortalama hizinizi giriniz(km/sa): ");scanf("%d",&hiz);
+ sure=(float)yol/hiz;
+ printf("Bu yolu alis sureniz:%1.2f saat",sure); 
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+x=0                 #Fibonacci degeri
+y=1                 #Fibonacci dizisin olusturmak icin kullanilan yardimci deger.
+z=0                 #Donguyu sinirlamak icin kullanilan degiskenler. 0-20 arasinda.
+max=20              #Donguyu sinirlamak icin kullanilan degiskenler. 0-20 arasinda.
+
+while z<20:         #Dongu sinirlama tanimi
+    z=z+1           #Dongu tanimi
+    print(x)        #Ekrana bastirma kismi
+    x_eski=x        #Fibonacci dongusunun tanimi
+    x=y             #Fibonacci dongusunun tanimi
+    y=y+x_eski      #Fibonacci dongusunun tanimi

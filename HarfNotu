@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#python3
+
+def hesapla(sayi):
+	try:
+		sayi = int(sayi)
+		if 0 <= sayi < 70:
+			return "F"
+		elif 70 <= int(sayi) < 80:
+			return "C"
+		elif 80 <= int(sayi) < 90:
+			return "B"
+		elif 90 <= int(sayi) <= 100:
+			return "A"
+		else:
+			return "Hatalı giriş. 0 ile 100 arasında bir sayi girin."
+	except ValueError:
+		return "Sadece sayı girin."
+
+
+if __name__ == "__main__":
+	sayi = input("0 ile 100 arasında bir sayi girin.")
+	print(hesapla(sayi))

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BasitIslemler {
+
+	public static void main(String[] args) {
+		Scanner a = new Scanner(System.in);
+		System.out.println("ilk sayiyi giriniz");
+		int sayi1 = a.nextInt();
+		System.out.println("ikinci sayiyi giriniz");
+		int sayi2 = a.nextInt();
+		
+		System.out.println("toplamlari : " + (sayi1+sayi2));
+		System.out.println("farklari : " + (sayi1-sayi2));
+		System.out.println("carpimlari : " + (sayi1*sayi2));
+		System.out.println("birinci sayinin ikinci sayiya bölümü : " + (double)((double)sayi1/(double)sayi2));
+		System.out.println("birinci sayiyi ikinci sayiya bölünce kalan : "+ (sayi1%sayi2));
+	}
+
+}

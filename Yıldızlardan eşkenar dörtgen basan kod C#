@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi = 0; int sayac = -1;
+            Console.Write("Kenar Sayısını Giriniz: ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            for (int i = 0; i < sayi-1; i++)
+            {
+                for (int s = sayi; s > i; s--)
+                {
+                   Console.Write(" ");
+                }
+                Console.Write("*");
+                for (int a = 0; a < sayac; a++)
+                {
+                    Console.Write(" ");
+                }
+                if (i != 0) Console.WriteLine("*");
+                else Console.WriteLine();
+                sayac += 2;
+            }
+            for (int i = 0; i < sayi*2; i++)
+            {
+                if (i % 2 != 0) Console.Write("*");
+                else Console.Write(" ");
+            }
+            Console.ReadKey();
+        }
+    }
+}

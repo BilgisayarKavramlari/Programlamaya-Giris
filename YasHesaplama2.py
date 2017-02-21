@@ -1,5 +1,6 @@
+from datetime import datetime
 
-bugunTarihi = int(input("Bugünün tarihini yıl olarak giriniz: "))
+bugunTarihi = datetime.now().year
 dogumGunu = int(input("Doğum yılınızı giriniz: "))
 
 yas = bugunTarihi - dogumGunu

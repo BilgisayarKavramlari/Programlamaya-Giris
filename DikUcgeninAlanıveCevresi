@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int birinciKenar,ikinciKenar,alan,cevre;
+    cout<<"Birinci Kenarı Giriniz:";
+    cin >>birinciKenar;
+    cout<<"\nIkinci Kenarı Giriniz:";
+    cin >>ikinciKenar;
+    alan=(birinciKenar*ikinciKenar)/2;
+    cout <<"\nuçgenin alanı:"<<alan;
+    cevre=2*(birinciKenar+ikinciKenar);
+    cout<<"\nuçgenin çevresi:"<<cevre;
+    getch();
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+
+int kenar1,kenar2,cevre,hipotenus;
+double alan;
+
+printf("1.dik kenari giriniz : \n");
+scanf("%d",&kenar1);
+
+printf("2.ci dik kenari giriniz :\n ");
+scanf("%d",&kenar2);
+
+alan=(double)(kenar1kenar2)/2;
+hipotenus=sqrt(kenar1kenar1+kenar2*kenar2);
+cevre=kenar1+kenar2+hipotenus;
+printf("Girilen ucgenin alani %.2lf, cevresi %d dir.",alan,cevre);
+
+return 0;
+}

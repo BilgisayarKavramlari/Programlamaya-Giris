@@ -4,7 +4,7 @@ int faktoriyel(int);
 
 int main(){
 
-int sayi,sonuc;
+int sayi,sonuc=0;
 
 printf("Faktoriyeli alinacak sayi :\n";
 scanf("%d",&sayi);

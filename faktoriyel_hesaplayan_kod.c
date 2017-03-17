@@ -15,5 +15,5 @@ return 0;
 
 int faktoriyel(int sayi){
 if(sayi==1 || sayi==0) return 1;
-else return faktoriyel(sayi)*faktoriyel(sayi-1);
+else return sayi*faktoriyel(sayi-1);
 }

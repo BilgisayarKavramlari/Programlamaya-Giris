@@ -1,3 +1,4 @@
+; Assembly 32bit linux için Merhaba Assembly Uygulaması
 section .text ; Calistirilacak kodlar kısmı
 
 	global _start ; Baslangic noktasi belirtiyoruz
@@ -5,7 +6,8 @@ section .text ; Calistirilacak kodlar kısmı
 _start: ; Bolum Kodları
 
 	nop ; Hic bir islem yapma
-	mov eax, 4 ;
+
+	mov eax, 4 ; Sistem Çağrı numarası
 	mov ebx, 1 ;
 	mov ecx, mesaj ;
 	mov edx, 11h ;

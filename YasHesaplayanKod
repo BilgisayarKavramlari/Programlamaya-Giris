@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int yil,yas,dyili;
+cout<<"Hangi yilda olgumuzu giriniz:";
+cin>>yil;
+cout<<"\nDogum yilinizi giriniz:";
+cin>>dyili;
+cout<<"\nYasiniz: "<<yil-dyili;
+
+}

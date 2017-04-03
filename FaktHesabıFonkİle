@@ -1,0 +1,22 @@
+int fakt(int sayi)
+{
+	int deger=1;
+	for(int i=2;i<=sayi;i++)
+	{
+		deger*=i;
+		
+	}
+	return deger;
+	
+}
+int main()
+{
+
+	int sayi,sonuc;
+	printf("Faktoriyeli alinacak sayiyi giriniz:");
+	scanf("%d",&sayi);
+	sonuc=fakt(sayi);
+	printf("Sonuc: %d",sonuc);	
+	
+
+}

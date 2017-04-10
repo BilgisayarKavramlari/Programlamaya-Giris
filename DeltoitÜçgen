@@ -1,0 +1,81 @@
+#include<cs50.h>
+#include<stdio.h>
+
+int main()
+{
+    
+    int i ,j,  k;
+    int bosluk = 1;
+    int Boy;
+    
+    printf("üçgen boyut ? : ");
+    scanf("%i", &Boy);
+    
+    Boy = Boy/2;
+    
+    for(i=0; i <= Boy; i++)
+    {
+        for(k = Boy; k >= i; k--)
+        { 
+            printf(" ");
+            if(k == i)
+            {
+                printf("*");
+            }
+        }
+        
+        if(i >=1 && i <=Boy)
+        {
+            for(j = 0; j < bosluk; j++)
+            {
+                    
+                printf(" ");
+                if(j == bosluk-1)
+                {
+                    printf("*");
+                }
+            
+            }
+            bosluk = bosluk+2;
+        }
+        
+        printf("\n");
+    }
+    
+    bosluk = Boy*2-3;
+    
+    for(i = 1; i <= Boy; i++ )
+    {
+        
+        for(k = 0; k <=i; k++ )
+        {
+            printf(" ");
+            if(k == i)
+            {
+                printf("*");
+            }
+            
+        }
+        
+        if(i < Boy && i >=1)
+        {
+            for(j = 0; j <= bosluk; j++ )
+            {
+                printf(" ");
+            
+                if(j == bosluk-1)
+                {
+                    printf("*");
+                }
+            
+            }
+            bosluk = bosluk-2;
+        }
+        
+        printf("\n");
+    }
+    
+    return 0;
+    
+    
+}

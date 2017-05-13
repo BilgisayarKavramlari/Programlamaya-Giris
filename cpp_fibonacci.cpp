@@ -41,7 +41,7 @@ int main(void)
 	cin >> limit;
 
 	// This loop prints all the numbers which algorithm found.
-	// Here is might be a error, because of maximum of long.
+	// Here might be a error, because of maximum of long.
 	for (long number : fibonacci(limit))
 		cout << number << endl;
 

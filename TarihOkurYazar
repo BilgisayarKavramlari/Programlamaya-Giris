@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TarihOkurYazar {
+
+	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+		System.out.println("sayi olarak bir gün giriniz");
+		int gün = key.nextInt();
+		System.out.println("sayi olarak bir ay giriniz");
+		int ay = key.nextInt();
+		System.out.println("sayi olarak bir yil giriniz");
+		int yil = key.nextInt();
+		
+		System.out.println(gün + "." + ay + "." + yil);
+		System.out.println(ay + "." + gün + "." + yil);
+		System.out.println(yil + "." + ay + "." + gün);
+		
+	}
+
+}

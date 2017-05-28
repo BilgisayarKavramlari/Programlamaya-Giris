@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+    int a;
+    printf("Ekrana Sayı Yaz");
+    scanf("%d" ,&a);
+    printf("Girilen Sayı:%d", a)
+    return 0;
+    }

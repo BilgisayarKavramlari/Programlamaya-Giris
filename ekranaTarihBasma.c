@@ -1,16 +1,12 @@
-/Created by Oğuz Kaan BULUT.
-//All rights reserved.
-
+// dbsrht tarafından değiştirilmiştir.
 #include <stdio.h>
-#include <time.h>
 #include <conio.h>
-
-void main(){
+int main(){
 	
-	time_t t;
+	printf(__DATE__); 	// Ekrana tarihi yazdırır.
+	puts("");			// \n için kullanıldı.
+	printf(__TIME__);		// Ekrana saati yazdırır.
 
-    t = time(NULL);
-    printf("Gunun tarih ve saati: %s",ctime(&t));
-    
-  getch();
-}
+
+	getchar(); // veya system("PAUSE"); kullanılabilir.
+	return 0;}

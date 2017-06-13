@@ -9,8 +9,8 @@ public static void main(String[] args) {
     System.out.println("c musluğu havuzu kaç saatte doldurmaktadır: ");
     Scanner c = new Scanner (System.in);
     float z = c.nextInt();
-    float kacSaat =  (((1/x)+(1/y)+(1/z)));    
-    System.out.println("3 musluk aynı anda açılırsa havuz: "+ (1/kacSaat)+" saatte dolar" ); 
+    float kacSaat =  (1/((1/x)+(1/y)+(1/z)));    
+    System.out.println("3 musluk aynı anda açılırsa havuz: "+ kacSaat+" saatte dolar" ); 
   
     }
   }

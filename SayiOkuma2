@@ -1,0 +1,17 @@
+package SayiOkuma2;
+import java.util.Scanner;
+
+public class SayiOkuma2
+{
+  public static void main (String[] args);
+  {
+    Scanner a = new scanner(System.in);
+    
+    System.out.print("Bir sayı giriniz:");
+    int sayi = a.nextInt();
+    
+    System.out.println("Sayı: " + sayi);
+  }
+}
+    
+    

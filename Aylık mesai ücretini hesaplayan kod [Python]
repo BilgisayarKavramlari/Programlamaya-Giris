@@ -1,0 +1,27 @@
+a = input("Kaç saat mesaiye kalıyorsunuz?")
+a = int(a)
+
+if int(a) in range(-1, 11):
+        b = int(1)
+        c = a*b
+        print("Mesai Ücretiniz:", c, "Tl")
+
+if int(a) in range(11, 21):
+        b = int(2)
+        c = a*b
+        print("Mesai Ücretiniz:", c, "Tl")
+
+if int(a) in range(21, 41):
+        b = int(3)
+        c = a * b
+        print("Mesai Ücretiniz:", c, "Tl")
+
+if int(a) in range(41, 101):
+        b = int(4)
+        c = a * b
+        print("Mesai Ücretiniz:", c, "Tl")
+
+if int(a) in range(101, a+1):
+        b = int(5)
+        c = a * b
+        print("Mesai Ücretiniz:", c, "Tl")

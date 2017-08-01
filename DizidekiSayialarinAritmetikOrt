@@ -1,0 +1,15 @@
+class DizidekiSayialarinAritmetikOrt 
+{
+    public static void main(String[] args) 
+    {
+        int[] A = {1, 9, 2, 2, 7, 9, 9};
+        int toplam = 0;
+
+        for (int j = 0; j < A.length; j++) 
+        {
+            toplam += A[j];
+        }
+        
+        System.out.println("Dizideki sayıaların aritmetik ortalaması = " + (toplam/A.length));
+    }
+}

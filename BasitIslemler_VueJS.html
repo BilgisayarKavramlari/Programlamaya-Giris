@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basit İşlemler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="firstNumber" type="number" placeholder="birinci sayı" id="number">
+      <p>  </p>
+      <input v-model="secondNumber" type="number" placeholder="ikinci sayı" id="number">
+      <p><button v-on:click="getResults">Hesapla</button></p>
+      <p v-for="result in results">
+        {{result}}
+      </p>
+    </div>
+    <script type="text/javascript">
+      var app = new Vue({
+        el: '#app',
+        data: {
+          firstNumber: "",
+          secondNumber: "",
+          results: []
+        },
+        methods: {
+          getResults: function () {
+            this.results = [];
+            this.firstNumber = parseInt(this.firstNumber);
+            this.secondNumber = parseInt(this.secondNumber);
+            this.results.push("Toplam " + (this.firstNumber + this.secondNumber));
+            this.results.push("Fark " + (this.firstNumber - this.secondNumber));
+            this.results.push("Çarpım " + (this.firstNumber * this.secondNumber));
+            this.results.push("Bölüm " + (this.firstNumber / this.secondNumber));
+            this.results.push("Mod " + (this.firstNumber % this.secondNumber));
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

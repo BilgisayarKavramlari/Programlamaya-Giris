@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarih kullanımı</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{tarih()}}
+    </div>
+    <script type="text/javascript">
+      new Vue({
+        el: '#app',
+        methods: {
+          tarih: function () {
+            return new Date().toString();
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

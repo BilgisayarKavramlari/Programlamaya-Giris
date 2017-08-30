@@ -12,7 +12,7 @@ public class BasitIslemler
         System.out.println("Toplam = " + (sayi1 + sayi2));
         System.out.println("Fark = " + (sayi1 - sayi2));
         System.out.println("Çarpım = " + (sayi1 * sayi2));
-        System.out.println("Bölüm = " + (double) (sayi1 / sayi2));
+        System.out.println("Bölüm = " + ((double)sayi1 / (double)sayi2));
         System.out.println("Kalan = " + sayi1%sayi2);
     }   
 }

@@ -9,6 +9,6 @@ public class DizidekiOrtalama
         {
             toplam += dizi[i]; 
         }
-        System.out.println("Dizideki elemnaların geometrik ortalaması = " + toplam/dizi.length);
+        System.out.println("Dizideki elemanların aritmetik ortalaması = " + toplam/dizi.length);
     }   
 }

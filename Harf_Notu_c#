@@ -1,0 +1,16 @@
+int not;
+            Console.WriteLine("Notunuzu sayı olarak giriniz:");
+            not = int.Parse(Console.ReadLine());
+
+            if(not>=90 && not<=100)
+            { Console.WriteLine("Notunuzun harf karşılığı: A"); }
+
+            else if(not>=80 && not<=90)
+            { Console.WriteLine("Notunuzun harf karşılığı: B"); }
+
+            else if (not >= 70 && not <= 80)
+            { Console.WriteLine("Notunuzun harf karşılığı: C"); }
+
+            else
+            { Console.WriteLine("F"); }
+            Console.ReadKey();

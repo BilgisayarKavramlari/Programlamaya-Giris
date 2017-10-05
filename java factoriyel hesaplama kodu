@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class FactoriyelBulma {
+
+	public static void main(String[] args) {
+
+		 int sayi, faktoriyel=1;
+	        Scanner oku=new Scanner(System.in);
+	        System.out.print("Bir sayı giriniz: ");
+	        sayi=oku.nextInt();
+	        for(int i=2; i<=sayi; i++){
+	            faktoriyel=i*faktoriyel;
+	        }
+	        System.out.println(sayi+" sayısının faktöriyeli = "+faktoriyel);
+	    }
+
+}

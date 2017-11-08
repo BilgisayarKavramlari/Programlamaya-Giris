@@ -1,3 +1,6 @@
-<?php  
-  echo "Merhaba Dünya";
+
+<?php
+
+echo "Merhaba Dünya";
+
 ?>

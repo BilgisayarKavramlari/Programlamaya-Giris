@@ -1,0 +1,9 @@
+# Ozan Özdemir
+# Tanımlanan değişkenin değerini ekrana basma.
+
+tam_sayi = 10
+# tam_sayi adında bir değişken oluşturduk ve içerisine 10 değerini atadık
+
+print(tam_sayi)
+
+# Ve ardından print() fonksiyonu sayesinde print() fonksiyonumuzun içerisine tam_sayi değişkenimizi koyarak ekrana 10 çıktısı basmış olduk.

@@ -14,12 +14,9 @@ namespace ConsoleApplication2
 
             int x = int.Parse(Console.ReadLine());
 
-            Console.Write("Girilen Sayi :");
-
-            Console.WriteLine(x);
+            Console.WriteLine("Girilen Sayi : {0}", x);
 
              
-
         }
     }
 }

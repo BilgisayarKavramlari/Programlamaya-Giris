@@ -1,0 +1,18 @@
+# Ozan Özdemir
+# 20/10/2017
+sayi_bir = input("Lütfen birinci sayıyı giriniz.  ")# Tanımlamış olduğumuz sayi_bir değişkeni ve input() fonksiyonu ile kullanıcıdan birinci sayıyı istiyoruz.
+sayi_iki = input("Lütfen ikinci  sayıyı giriniz.  ")# Tanımlamış olduğumuz sayi_iki değişkeni ve input() fonksyionu ile kullanıcıdan ikinci sayıyı istiyoruz.
+
+data_bir = int(sayi_bir)# sayi_bir değişkenimizi sayısal işlemleri yapabilmek adına int() fonksiyonu ile tam sayı değerleri alacak şekilde data_bir değişkenimizin içinde değiştiriyoruz.
+data_iki = int(sayi_iki)# sayi_iki değişkenimizi sayısal işlemleri yapabilmek adına int() fonksiyonu ile tam sayı değerleri alacak şekilde data_bir değişkenimizin içinde değiştiriyoruz.
+
+if data_bir == data_iki: # Burada bir koşul durumu belirtiyoruz eğer data_bir değişkenimizde kullanıcımızdan gelen sayı data_iki değişkenimize eşit ise şu çıktıları belirt diyoruz
+    print("\nBirinci sayı ve İkinci sayı birbirlerine eşittir.\nBirinci sayı ve ikinci sayı farklı değildir.\nBirinci sayı küçük değildir.")# \n adlı kaçış dizimiz ile bir alt satıra geçiş yapabiliyoruz.
+    print("\nİkinci  sayı küçük değildir.\nBirinci sayı küçük eşittir.\nikinci sayı küçük eşittir.")
+elif data_bir != data_iki: # Kullanıcımızın girdiği data_bir veri si ile data_iki verisi birbirleri ile aynı değil ise aşağıdaki durumlar gerçekleşsin komutunu veriyoruz
+    print("\nBirinci ve İkinci sayılar birbirlerine eşit değildir.\nSayılar farklıdır.")
+    if data_bir < data_iki: # Kullanıcımızın girdiği data_bir küçük ise data_iki den aşağıdaki durumlar gerçekleşir.
+        print("Birinci sayı küçüktür.\nİkinci sayı küçük değildir.\nBirinci sayı küçük eşittir.")
+    elif data_bir > data_iki: # Kullanıcımızın girdiği data_bir verisi büyük ise data_iki den aşağıdaki durumlar gerçekleşir.
+        print("Birinci sayı büyüktür.\nİkincisayı büyük değildir.\nBirinci sayı büyük eşittir.")
+        

@@ -1,0 +1,9 @@
+# Ozan Özdemir
+# 20/10/2017
+for sayac in range(1,11):
+    #range() fonksiyonu ile belirli aralıktaki sayıları listeleyebiliriz örneğin
+    #bu kod üzerinde 1,11 dedik ama çıktı olarak 1,10 alıyoruz sebebi ise range fonksiyonun belirtilen son sayı aralığını dahil etmemesidir n-1 gibi düşünün 11-1=10 şeklinde.
+    #for sayac in range(1,11): diyerekde range() fonksiyonu içerisinde verdiğimiz sayı değerleri için sayac öğesinin ekrana basma işlemini gerçekleştirir.
+    print(sayac)
+
+    

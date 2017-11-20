@@ -1,5 +1,5 @@
 # Ozan Özdemir
-# 20/11/2017
+# 20/10/2017
 
 sayi = input("Lütfen bir sayi giriniz.")
 #sayi değişkenini tanımlayarak input fonksiyonu ile kullanıcıdan bir sayı istiyoruz.

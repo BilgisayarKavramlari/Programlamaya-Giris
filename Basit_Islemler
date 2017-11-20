@@ -1,0 +1,19 @@
+# Ozan Özdemir
+# 20/10/2017
+sayi_bir = input("Lütfen birinci sayıyı giriniz.")
+sayi_iki = input("Lütfen ikinci sayıyı giriniz. ")
+#sayi_bir ve sayi_iki adında değişkenler tanımlayıp kullanıcıdan input() fonksiyonu yardımı ile bu sayı değerlerini alıyoruz.
+
+
+data_bir = int(sayi_bir) # tanımlanan sayı_bir değişkenini int'a dönüştürüyoruz sebebi ise input() fonksiyonu içerisindeki değerleri str olarak algılar bu işlemi gerçekleştirmezsek örneğin toplama işleminde 30+30 = 60 yerine 3030 görebiliriz
+data_iki = int(sayi_iki) # tanımlanan sayı_iki değişkenini int'a dönüştürüyoruz sebebi ise input() fonksiyonu içerisindeki değerleri str olarak algılar bu işlemi gerçekleştirmezsek örneğin toplama işleminde 30+30 = 60 yerine 3030 görebiliriz
+
+toplam  = data_bir + data_iki # toplam değişkeni içerisinde  + işleci yardımı ile birinci ve ikinci sayıyı topluyoruz.
+cikarma = data_bir - data_iki # cikarma değişkeni içerisinde - işleci yardımı ile birinci ve ikinci sayıyı çıkartıyoruz.
+carpma  = data_bir * data_iki # carpma değişkeni içerisinde  * işleci yardımı ile birinci ve ikinci sayıyı çarpıyoruz 
+bolme   = data_bir / data_iki # bolme değişkeni içerisinde   / işleci yardımı ile birinci ve ikinci sayıyı bölüyoruz
+
+print("Birinci ve İkinci sayının toplam sonucu  = ",toplam)  #Ekrana toplama işlemi sonucunu gösteriyor. Ve "toplam" değişkenini parametre olarak burada belirtip sonucu gösteriyoruz
+print("Birinci ve İkinci sayının çıkarma sonucu = ",cikarma) #Ekrana toplama işlemi sonucunu gösteriyor. Ve "cikarma" değişkenini parametre olarak burada belirtip sonucu gösteriyoruz
+print("Birinci ve İkinci sayının çarpım sonucu  = ",carpma)  #Ekrana toplama işlemi sonucunu gösteriyor. Ve "carpma" değişkenini parametre olarak burada belirtip sonucu gösteriyoruz
+print("Birinci ve İkinci sayının bölme sonucu   = ",bolme)   #Ekrana toplama işlemi sonucunu gösteriyor. Ve "bolme" değişkenini parametre olarak burada belirtip sonucu gösteriyoruz

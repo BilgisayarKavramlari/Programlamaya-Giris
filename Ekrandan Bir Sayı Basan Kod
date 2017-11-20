@@ -1,0 +1,7 @@
+# Ozan Özdemir
+# 20/11/2017
+
+sayi = input("Lütfen bir sayi giriniz.")
+#sayi değişkenini tanımlayarak input fonksiyonu ile kullanıcıdan bir sayı istiyoruz.
+print("Girdiğiniz sayi",sayi)
+#print fonksiyonu ile kullanıcımıza bilgi veriyor ayrıca tanımladığımız "sayi" değişkenini burada  parametre olarak belirterek kullanıcıya girdiği sayıyı göstermiş oluyoruz.

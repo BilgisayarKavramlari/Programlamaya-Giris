@@ -1,0 +1,10 @@
+public class NewClass {
+    public static void main(String[] args){
+        Scanner k=new Scanner(System.in);
+        System.out.println("kelime girin:");String m=k.nextLine();//boşlukta bir karekter sayılır
+        int karektersayısı=m.length();
+        System.out.println("girilen kelimenin karekter sayısı:"+karektersayısı);
+  
+    }
+    
+}

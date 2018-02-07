@@ -1,0 +1,13 @@
+static void Main(string[] args)
+{
+
+    int[] numbers = { 15, 2, 4, 7, 6, 16, 11, 19, 8 };
+    int min = numbers.Min();
+    int max = numbers.Max();
+    int a = max - min;
+    
+    Console.WriteLine(a);
+    Console.ReadLine();
+
+
+}

@@ -1,0 +1,33 @@
+package kosegenmatris;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author macbookair
+ */
+public class KosegenMatris {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.print("Boyut: ");
+        Scanner scn=new Scanner(System.in);
+        int boyut=scn.nextInt();
+        int matris[][]=new int[boyut][boyut];
+        
+        for(int i=0;i<boyut;i++){
+            for(int j=0;j<boyut;j++){
+                if(i==j) matris[i][j]=1;
+            }
+        }
+        for(int i=0;i<boyut;i++){
+            for(int j=0;j<boyut;j++){
+                System.out.print(matris[i][j]);
+            }
+        System.out.println("");
+        }
+    }
+    
+}

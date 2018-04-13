@@ -1,0 +1,40 @@
+package fibanoccidizisi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author macbookair
+ */
+public class Fibanoccidizisi {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Bir sayi giriniz: ");
+        Scanner scn=new Scanner(System.in);
+        int snum=scn.nextInt();
+        if(snum==1 || snum==0){
+            System.out.println("1");
+        }
+        else{
+        int fibo[]=new int[snum];
+        fibo[0]=1;
+        fibo[1]=1;
+        
+        for(int i=0;i<snum;i++){
+            if(i==0 || i==1){
+                System.out.println("1");
+            }
+            else{
+            fibo[i]=fibo[i-2]+fibo[i-1];
+            System.out.println(""+fibo[i]);
+            }
+        }
+        }
+        
+
+    }
+    
+}

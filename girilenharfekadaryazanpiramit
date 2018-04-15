@@ -1,0 +1,65 @@
+<?php
+$alfabe1=[
+"1"=>"A",
+"2"=>"B",
+"3"=>"C",
+"4"=>"Ç",
+"5"=>"D",
+"6"=>"E",
+"7"=>"F",
+"8"=>"G",
+"9"=>"Ğ",
+"10"=>"H",
+"11"=>"I",
+"12"=>"İ",
+"13"=>"J",
+"14"=>"K",
+"15"=>"L",
+"16"=>"M",
+"17"=>"N",
+"18"=>"O",
+"19"=>"Ö",
+"20"=>"P",
+"21"=>"R",
+"22"=>"S",
+"23"=>"Ş",
+"24"=>"T",
+"25"=>"U",
+"26"=>"Ü",
+"27"=>"V",
+"28"=>"Y",
+"29"=>"Z"
+];
+
+$secilenharf="Z";
+
+
+foreach ($alfabe1 as $key => $value) {
+	if ($value==$secilenharf) {
+		$bitis= $key;
+	}
+}
+$yukseklik=$bitis;
+$baslangic=1;
+
+
+for ($i=1; $i <= $bitis; $i++) { 
+	
+while ( $baslangic <= $i) {
+	
+for ($c=1; $c <  $baslangic; $c++) { 
+	echo $alfabe1[$c];
+}
+for ($d=$baslangic; $d >= 1 ; $d--) { 
+	echo $alfabe1[$d];
+}
+
+
+	
+	$baslangic=$baslangic+1;
+}
+
+echo "<br>";
+
+	
+}

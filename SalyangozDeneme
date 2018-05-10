@@ -1,0 +1,43 @@
+t=15
+ebat=t
+sonuc=[]
+for x in range(0,t):
+    sonuc.append([0 for x in range(0,t)])
+
+ilk=0
+iki=1
+uc=ebat-2
+dort=t-2
+bes=1
+altı=2
+yedi=t-3
+for say in range(1,t**2+1):
+
+    
+    if say < t+1:
+        sonuc[0][ilk]=say
+        ilk+=1
+    elif t<say and say<2*t:
+        sonuc[iki][ebat-1]=say
+        iki+=1
+    elif 2*t-1<say and say<3*t-1:
+        sonuc[ebat-1][uc]=say
+        uc-=1
+    elif dort>0:
+        sonuc[dort][0]=say
+        dort-=1
+    elif bes<t-1:
+        sonuc[1][bes]=say
+        bes+=1
+    elif altı<t-1:
+        sonuc[altı][t-2]=say
+        altı+=1
+    elif yedi>0:
+        sonuc[t-2][yedi]=say
+        yedi-=1
+    else:
+        break
+    
+for x in range(0,t):
+    
+    print(sonuc[x], end="\n")

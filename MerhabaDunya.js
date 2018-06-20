@@ -1,1 +1,1 @@
-document.write("Merhaba Dünya");
+console.log("Merhaba Dünya");

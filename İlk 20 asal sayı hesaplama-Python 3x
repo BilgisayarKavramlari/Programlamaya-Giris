@@ -1,0 +1,19 @@
+                            ### İlk 20 asla sayıyı hesaplama ###
+
+
+sonuc = []                      #program sonucu bulunan asal sayıları atamak için boş bir list tanımalnır
+
+
+for i in range(1,100) :         # ilk 20 asal sayı 101 e kadar bulunur. Bunu daha genel yapamadım.
+    for z in range(2,i) :       # i sayılarının bölenleri kontrol edilir
+        if i % z == 0 :
+            break
+
+
+    else :
+
+        sonuc.append(i)         # bulunna asal sayı sonuc dizisine eklenir
+    if len(sonuc) == 20 :         # bulunan asal sayı 20 olduysa dur.
+        break
+
+print("ilk {} asal sayı".format(len(sonuc)) , ":\t" , sonuc)

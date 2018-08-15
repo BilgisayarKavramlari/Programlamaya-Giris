@@ -1,0 +1,10 @@
+package Deneme;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+    int x=5;
+        System.out.println("Değişken değeri="+x);
+    }
+    
+}

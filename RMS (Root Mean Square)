@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+		double toplam=0;
+	      Scanner giris= new Scanner(System.in);
+	      double x[]= new double[4];
+	      for(int i=0;i<4;i++) {
+	      System.out.println(i+1 + ".sayı giriniz:");
+	      x[i]=giris.nextDouble();
+	      x[i]=Math.pow(x[i],2);
+	      toplam=toplam+x[i];
+	      
+	      	         }
+	double ortalama=toplam/x.length;
+	
+	System.out.println("ortalaması: "+ ortalama);
+	System.out.println("karekökü "+ Math.sqrt(ortalama));
+	
+	      for(int i=0;i<4;i++) {
+	    	  System.out.println(x[i]);
+	    	  
+	      }
+	      

@@ -1,0 +1,14 @@
+public static void main(String[] args) {
+		double toplam=0;
+		Scanner giris= new Scanner(System.in);
+	    double x[]= new double[5];
+	    for(int i=0;i<5;i++) {
+	      System.out.println("Binary sayıyı tek tek giriniz:(0-1) ");
+	      x[i]=giris.nextInt(); 
+	     toplam = toplam + x[i]*Math.pow(2, i)  ;   }
+	    System.out.print("ikilik sayı: ");
+	      for(int i=0;i<5;i++) {
+	    	  System.out.print((int)x[i]);
+	      }
+	      System.out.println();
+	      System.out.println("10 luk sistemde karşılığı : " + toplam);

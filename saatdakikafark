@@ -1,0 +1,20 @@
+public static void main(String[] args) {
+	Scanner giris=new Scanner(System.in);
+	System.out.println("Saat:");
+	int x=giris.nextInt();
+	System.out.println("Dakika:");
+	int y=giris.nextInt();
+	System.out.println("Fark:");
+	int z=giris.nextInt();
+	int t=0;
+	
+	int topdak=z+y;
+	int saat=topdak/60;
+	int kalan=topdak%60;
+	if(saat!=0) {
+		x=x+saat;
+		if(x>=24) {t=t+1;System.out.println("Saat"+ t +":" + kalan);}
+		else System.out.println("Saat"+ x +":" + kalan);			
+	}
+	else {System.out.println("Saat"+ x +":" + topdak);}
+	

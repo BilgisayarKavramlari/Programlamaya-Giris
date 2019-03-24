@@ -1,0 +1,4 @@
+<?php
+$mesaj = "Merhaba dünya";
+echo $mesaj
+?>

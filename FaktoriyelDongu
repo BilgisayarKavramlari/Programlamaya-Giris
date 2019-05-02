@@ -1,0 +1,6 @@
+n=int(input("Bir sayı giriniz: "))
+b=1
+while n>=1:
+    b=b*n
+    n-=1
+print(b)

@@ -1,0 +1,8 @@
+import java.utill.Scanner;
+public class Projeler {
+ public static void main (String[] args) {
+ 
+  Scanner sayiGir = new.Scanner(System.in);
+  System.out.println("Bir Sayı Giriniz= ");
+  int sayi = sayiGir.nextIn();
+  System.out.println("Girdiğiniz Sayı= " + sayi); }}

@@ -1,0 +1,1 @@
+document.write("Merhaba Dünya");

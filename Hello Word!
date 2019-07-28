@@ -1,0 +1,5 @@
+public class Merhaba Dünya {
+public static void main (String Args[]) {
+System.out.println("Merhaba Dünya");
+   }
+}

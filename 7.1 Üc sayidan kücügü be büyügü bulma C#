@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _7_uc_sayidan_en_büyügünü_ve_kücügünü_bulan_kod
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+             int sayi1;
+             int sayi2;
+             int sayi3;
+
+            Console.Write("1. Sayinizi Giriniz: ");
+             sayi1 = int.Parse(Console.ReadLine());
+            Console.Write("2. Sayinizi Giriniz: ");
+            sayi2 = int.Parse(Console.ReadLine());
+            Console.Write("3. Sayinizi Giriniz: ");
+            sayi3 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Girdiginiz Sayilar Tablosu ");
+            Console.WriteLine("****************************");
+            Console.WriteLine("Ilk sayi: " + sayi1);
+            Console.WriteLine("Ikinci sayi: " + sayi2);
+            Console.WriteLine("Ücuncu sayi: " + sayi3);
+            Console.WriteLine("En Büyük sayi: " + Math.Max(sayi1, Math.Max(sayi2, sayi3)));
+            Console.WriteLine("En Kücük sayi: " + Math.Min(sayi1, Math.Min(sayi2, sayi3)));
+            Console.ReadLine();
+
+
+        }
+      
+    }
+}

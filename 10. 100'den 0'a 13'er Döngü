@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10.yüzden_sifir_a_13e_Bölünebilen_sayilar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 91;
+            
+            while(i >= 13)
+            {
+                Console.WriteLine(i + ".");
+                i = i - 13;
+            }
+            Console.ReadLine();
+        }
+    }
+}

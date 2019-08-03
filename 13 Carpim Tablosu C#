@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _13_Carpim_Tablosu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayar = 0;            
+            for (int sayac = 1; sayac <= 5; sayac++)
+            {
+               
+                Console.SetCursorPosition(sayar++, 0);
+                Console.WriteLine(sayac);
+                sayar = sayar++ + 1 ;
+            }
+
+            sayar = 0;
+            for (int sayac1 = 2; sayac1 <=10; sayac1 +=2)
+            {
+                Console.SetCursorPosition(sayar++, 1);
+                Console.WriteLine(sayac1);
+                sayar = sayar++ + 1;
+            }
+            sayar = 0;   
+
+            for(int sayac2 = 3; sayac2 <=15; sayac2 +=3)
+            {
+                Console.SetCursorPosition(sayar++, 2);
+                Console.WriteLine(sayac2);
+                sayar = sayar++ + 1;
+            }
+
+            sayar = 0;
+
+            for (int sayac3 = 4; sayac3 <=16; sayac3 += 4)
+            {
+                
+                Console.SetCursorPosition(sayar++, 3);
+                Console.WriteLine(sayac3);
+                sayar = sayar++ +1;
+            }
+
+            sayar = 0;
+
+            for (int sayac4 = 5; sayac4 <= 25; sayac4 += 5)
+            {
+
+                Console.SetCursorPosition(sayar++, 3);
+                Console.WriteLine(sayac4);
+                sayar = sayar++ + 1;
+            }
+
+            Console.ReadLine();
+        }
+    }
+}

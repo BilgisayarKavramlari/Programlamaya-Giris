@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _11.Coklu_Kolon
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayar = 0;
+            
+            for(int sayac1 = 15; sayac1 < 91; sayac1+=15 )
+            {
+                Console.WriteLine(sayac1);    
+            }
+                for (int sayac2 = 5; sayac2 < 31; sayac2 += 5)
+                {
+                    Console.SetCursorPosition(3, sayar++);
+                    Console.WriteLine(sayac2);
+                }
+                    sayar = sayar - sayar;
+                    for (int sayac3 = 100; sayac3 > 49; sayac3 -= 10)
+                    {
+                    Console.SetCursorPosition(6, sayar++);
+                    Console.WriteLine(sayac3);
+                    }
+                       sayar = sayar - sayar;
+                         for (int sayac4 = 2; sayac4 <= 64; sayac4 *= 2)
+                        { 
+                        Console.SetCursorPosition(10, sayar++);
+                        Console.WriteLine(sayac4);
+                        }
+            
+            Console.ReadLine();
+        }
+    }
+}

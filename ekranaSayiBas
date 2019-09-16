@@ -1,0 +1,9 @@
+#include <studio.h>
+
+int main(){
+  int a;
+  printf("sayı");
+  scanf("%d",&a);
+  printf("girilen: %d",a);
+  return 0;
+}

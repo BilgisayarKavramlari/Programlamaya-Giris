@@ -1,0 +1,29 @@
+using System;
+
+namespace _15._Ters_Köşegen_Matrisi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Give me a Number: ");
+            int Column = int.Parse(Console.ReadLine());
+            for (int Counter = 0; Counter < Column ; Counter++)
+            {
+                for (int Counter2 = Column -1; Counter2 > 0; Counter2--)
+                {
+                    if (Counter2 == Counter)
+                    {
+                        Console.Write("1");
+                    }
+
+                    else
+                    {
+                        Console.Write("0");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

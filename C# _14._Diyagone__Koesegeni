@@ -1,0 +1,35 @@
+using System;
+
+namespace _14._Diyagone__Koesegeni__1_olan_bos_matris
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Row = 7;
+            int Column;
+            Console.WriteLine("Give me a Number");
+            Column = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your number is: " + Column);
+            for (int i = 0; i <= Column; i++) 
+            {
+                
+                for (int y = 0; y <= Row; y++) 
+                {
+                    if (i == y)
+                    {
+                        Console.Write("1");
+                    }
+                    else 
+                    {
+                        Console.Write("0");
+                    }
+                   
+                }
+                Console.WriteLine();
+            }
+        
+        }
+       
+        
+    }

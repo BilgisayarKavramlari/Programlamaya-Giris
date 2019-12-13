@@ -1,0 +1,5 @@
+public static void main(String[] args) {
+// TODO code application logic her
+System.out.println("Merhaba Dunya");
+System.out.println("Recep BAYLAN");
+ }

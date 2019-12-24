@@ -1,0 +1,40 @@
+package bucky.collection;
+
+import java.util.ArrayList;
+class baza {
+    Integer id;
+    String name;
+}
+class  working<MenimTipim>{
+   MenimTipim salary;
+   String name;
+
+}
+public class Generic {
+    public static void main(String[] args) {
+        ArrayList <String> a= new ArrayList<>();
+        String s1= "Bahramin maceralari";
+        String s2 ="Dastanin mafiyasi";
+        a.add(s2);
+        a.add(s1);
+        ArrayList<baza> a2 = new ArrayList<>();
+        baza bz= new baza();
+        String s3 ="kjjklj";
+        Integer s4 =15;
+        Double s5 =6.4;
+        a2.add(bz);
+        bz.id=100;
+        bz.name="bahram";
+        System.out.println(bz.name);
+
+        working<Double> nermin = new working();
+        nermin.salary =568.89;
+        nermin.name ="Sevgilim";
+
+        System.out.println(nermin.name);
+        System.out.println(nermin.salary);
+
+
+
+    }
+}

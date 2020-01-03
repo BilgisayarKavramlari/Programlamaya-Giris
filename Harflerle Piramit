@@ -1,0 +1,63 @@
+using System;
+
+namespace PiramitHarf
+{
+    class Program
+    {
+
+
+        static public string[] Harfler = new string[] { "A", "B", "C", "D", "E", "F", "G", "H","I", "J", "K", "L", "M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" };
+
+
+        public Program()
+        {
+
+
+        }
+        static void Main(string[] args)
+        {
+
+
+            string girdi = "";
+            int index = 0;
+            //int sayac = 0;
+
+            Console.WriteLine("Lütfen büyük bir harf giriniz:");
+
+            girdi =Console.ReadLine();
+
+            
+
+            for (int i = 0; i < Harfler.Length; i++)
+            {
+                if (girdi==Harfler[i])
+                {
+                    index = i+1;
+                    break;
+                }
+            }
+
+            if (index==0)
+            {
+                Console.WriteLine("Yanlış giriş yaptınız.");
+            }
+
+            
+                for (int a = 0; a < index; a++)
+                {
+                    for (int i = 0; i < a; i++)
+                    {
+                        Console.Write(Harfler[i]);
+                    }
+
+
+                    for (int b = a; b >= 0; b--)
+                    {
+                        Console.Write(Harfler[b]);
+                    }
+                    Console.WriteLine();
+                }
+            
+        }
+    }
+}

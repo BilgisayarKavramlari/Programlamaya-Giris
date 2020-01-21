@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+main()
+{
+	int sayi,sayac=0;
+	int toplam=0;
+	printf("Sayi : "); 
+	scanf("%d",&sayi);
+	
+	for(int k=0;k<=13;k++){
+		for(int l=0;l<=13;l++){
+			if(pow(k,3) + pow(l,3) == sayi)
+				sayac++;
+		}
+	}
+	if(sayac>1)
+		printf("%d ramanujan sayisidir.",sayi);
+	else
+		printf("%d ramanujan sayisi degildir.",sayi);
+}

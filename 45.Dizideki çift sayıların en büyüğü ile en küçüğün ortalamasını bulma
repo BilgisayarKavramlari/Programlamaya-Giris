@@ -37,7 +37,7 @@ public class DizidekiCiftSayilarinEnBuyuguileEnKucugunOrtalaması {
         System.out.println("Dizideki en büyük çift sayı:"+büyük);
         System.out.println("Dizideki en küçük çift sayı:"+küçük);
         System.out.println("Dizideki en büyük ile en küçük çift sayının toplamları:"+toplam);
-        System.out.println("Dizideki en büyük ile en küçük çift sayıların ortalaması:"+(double)(toplam/çift_sayılar.length));
+        System.out.println("Dizideki en büyük ile en küçük çift sayıların ortalaması:"+(double)(toplam/2));
         
     }
     }

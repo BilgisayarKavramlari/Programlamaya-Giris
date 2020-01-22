@@ -1,0 +1,32 @@
+public class DizidekiTekSayilerinToplami {
+    
+    public static void main(String[] args) {
+    int toplam=0;
+    int[] array=new int[10];
+    int[] tek_sayılar=new int[array.length];
+    for(int i=0;i<array.length;i++){
+        array[i]=(int)(Math.random()*101);
+    }  
+    //Dizideki sayıları görmek için alttaki bloğu kullanın
+//    for(int i=0;i<array.length;i++){
+//        System.out.println(array[i]);
+//    }
+    for(int i=0;i<array.length;i++){
+        if(!(array[i]%2==0)){
+            tek_sayılar[i]=array[i];
+        }
+    }
+    //Dizideki tek sayıları görmek için alttaki bloğu kullanın
+//    for(int i=0;i<tek_sayılar.length;i++){
+//        if(tek_sayılar[i]!=0)
+//        System.out.println(tek_sayılar[i]);
+//    }
+    for(int i=0;i<tek_sayılar.length;i++){
+        toplam+=tek_sayılar[i];
+    }  
+    
+        System.out.println("Dizideki elemanların adedi:"+array.length);
+        System.out.println("Dizideki tek sayıların toplamı:"+toplam);
+        
+    }
+    }

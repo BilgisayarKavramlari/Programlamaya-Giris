@@ -1,0 +1,19 @@
+public class DizidekiSayilarinGeometrikOrtalaması {
+    
+    public static void main(String[] args) {
+    int[] array=new int[10];
+    for(int i=0;i<array.length;i++){
+        array[i]=(int)(Math.random()*101);
+    }
+    int çarpım=1;  
+    double ortalama;
+    for(int i=0;i<array.length;i++){
+        çarpım*=array[i];        
+    }
+    ortalama=Math.pow(çarpım,1.0/array.length);
+        System.out.println("Dizideki elemanların sayısı:"+array.length);
+        System.out.println("Dizideki elemanların çarpımları:"+çarpım);
+        System.out.println("Dizideki elemanların geometrik ortalaması:"+ortalama);
+        
+    }
+    }

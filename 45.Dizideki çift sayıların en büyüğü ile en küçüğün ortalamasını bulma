@@ -1,0 +1,43 @@
+public class DizidekiCiftSayilarinEnBuyuguileEnKucugunOrtalaması {
+    
+    public static void main(String[] args) {
+    int toplam=0;
+    int büyük,küçük;
+    int[] array=new int[10];
+    int[] çift_sayılar=new int[array.length];
+    for(int i=0;i<array.length;i++){
+        array[i]=(int)(Math.random()*101);
+    }  
+    //Dizideki sayıları görmek için alttaki bloğu kullanın
+//    for(int i=0;i<array.length;i++){
+//        System.out.println(array[i]);
+//    }
+    for(int i=0;i<array.length;i++){
+        if(array[i]%2==0){
+            çift_sayılar[i]=array[i];
+        }
+    }
+    //Dizideki çift sayıları görmek için alttaki bloğu kullanın
+//    for(int i=0;i<çift_sayılar.length;i++){
+//        System.out.println(çift_sayılar[i]);
+//    }
+    büyük=çift_sayılar[0];
+    küçük=çift_sayılar[1];
+    for(int i=0;i<çift_sayılar.length;i++){
+        if(büyük<çift_sayılar[i]){
+            büyük=çift_sayılar[i];
+        }
+        if(küçük>çift_sayılar[i]){
+            if(!(küçük%2==0))
+            küçük=çift_sayılar[i];
+        }
+    }  
+        toplam=büyük+küçük;
+        System.out.println("Dizideki elemanların adedi:"+array.length);
+        System.out.println("Dizideki en büyük çift sayı:"+büyük);
+        System.out.println("Dizideki en küçük çift sayı:"+küçük);
+        System.out.println("Dizideki en büyük ile en küçük çift sayının toplamları:"+toplam);
+        System.out.println("Dizideki en büyük ile en küçük çift sayıların ortalaması:"+(double)(toplam/2));
+        
+    }
+    }

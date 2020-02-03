@@ -1,0 +1,3 @@
+a=input("Bir sayı giriniz")
+a=int(a)
+print(a)

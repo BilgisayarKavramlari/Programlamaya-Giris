@@ -1,0 +1,6 @@
+#pycharmda böyle çalıştırabilirsiniz
+a=input("Birinci Sayıyı Giriniz")
+b=input("İkinci sayıyı Giriniz")
+a=int(a)
+b=int(b)
+print(a+b)

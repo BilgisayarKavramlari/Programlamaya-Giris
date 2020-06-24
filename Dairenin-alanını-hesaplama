@@ -1,0 +1,4 @@
+r=float(input('r:'))
+pi=float(input('pi:'))
+daireAlan=pi*(r**2)
+print(daireAlan)

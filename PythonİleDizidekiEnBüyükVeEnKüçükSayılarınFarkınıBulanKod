@@ -1,0 +1,5 @@
+sq=[1,2,3,4,5,6,7]
+max=max(sq)
+min=min(sq)
+print(max-min)
+#cıktı: 6

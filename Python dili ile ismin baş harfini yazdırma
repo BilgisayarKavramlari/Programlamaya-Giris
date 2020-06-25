@@ -1,4 +1,0 @@
-name1='Trabzon'
-name2='Spor'
-print(name1[0]+name2[0])
-#cıktı: TS

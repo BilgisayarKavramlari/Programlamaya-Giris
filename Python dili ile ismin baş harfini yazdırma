@@ -1,0 +1,4 @@
+name='Trabzon'
+surname='Spor'
+print(name[0]+surname[0])
+#cıktı: TS

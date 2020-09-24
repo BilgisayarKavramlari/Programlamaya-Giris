@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sayilarin_harf_karsiligi
+{
+    class Program
+    {
+     
+        static void Main(string[] args)
+        {
+            
+            string[] LetterNumberFound = new string[5];
+            Random LuckyNumber = new Random();
+            
+            for (int i = 1; i<LetterNumberFound.Length; i++)
+            {
+                int Rnd = LuckyNumber.Next(100);
+                for (int index = 0; index < i; index++)
+                {
+                    
+                    if (Rnd >= 90 || Rnd == 100)    // A: 90 - 100
+                    {
+                        LetterNumberFound[1] = Convert.ToString(Rnd + "A");
+                    }
+                    else if (Rnd >= 80 || Rnd == 90)  // B: 80 - 90
+                    {
+                        LetterNumberFound[2] = Convert.ToString(Rnd + "B");
+                    }
+                    else if (Rnd >= 70 || Rnd == 80)  // C: 70 - 80 
+                    {
+                        LetterNumberFound[3] = Convert.ToString(Rnd + "c");
+                    }
+                    else if (Rnd <= 70) // F: 70
+                    {
+                        LetterNumberFound[4] = Convert.ToString(Rnd + "F");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Its Fantastic (= ");
+                        Console.ReadKey();
+                    }
+                }
+            }
+            Console.WriteLine(1 + "." + " " + LetterNumberFound[1]);
+            Console.WriteLine(2 + "." + " " + LetterNumberFound[2]);
+            Console.WriteLine(3 + "." + " " + LetterNumberFound[3]);
+            Console.WriteLine(4 + "." + " " + LetterNumberFound[4]);
+            Console.ReadKey();
+
+
+
+
+        }
+    }
+}

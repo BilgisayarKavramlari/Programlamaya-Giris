@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Mantık_İşlemleri__Logic_Operators_BKavramlari
+{
+    class Program
+    {
+        static void Main(string[] args)
+        { 
+            Program.Mantik();
+        }
+        public static void Mantik()
+        {
+            int sayi1, sayi2;
+            
+            //sayi2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Merhaba iki farkli sayi giriniz" +
+                "Birinci sayinizi giriniz");
+            sayi1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ikinci sayinizi giriniz");
+            sayi2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Girdiginiz sayilar\n" +
+                "Birinci sayi:" + sayi1 + "\n" + "Ikinci sayi:" + sayi2);
+            if (sayi1 == sayi2)
+            {
+                Console.WriteLine("Sayilar esitdir");
+            }
+            else
+            {
+                Console.WriteLine("Sayilar esit degildir");
+            }
+            if (sayi1 != sayi2)
+            {
+                Console.WriteLine("Sayilar farklidir");
+            }
+            else
+            {
+                Console.WriteLine("Sayilar farkli degildir");
+            }
+            if (sayi1 < sayi2)
+            {
+                Console.WriteLine("Birinci sayi ikinci sayidan kucukdur");
+            }
+            else
+            {
+                Console.WriteLine("Birinci sayi ikinci sayidan kucuk degildir");
+            }
+            Console.ReadLine();
+        }
+         
+    }
+}

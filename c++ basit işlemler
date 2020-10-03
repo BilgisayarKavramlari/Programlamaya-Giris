@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a ;
+cin >> a ;
+cout << "Lutfen bir sayi giriniz" << a << endl;
+int b ;
+cin >> b ;
+cout << "Lutfen ikinci bir sayi giriniz" << b << endl;
+cout << Bu sayilarin toplami << a + b << endl;
+cout << Bu sayilarin çarpımı << a * b << endl;
+cout << Bu sayilari cikartirsak sonuc << a - b << endl;
+cout << Bu sayilarin bolumu << a / b << endl;
+cout << Bu sayilarin bolumunden kalan << a % b << endl;
+return 0;
+}

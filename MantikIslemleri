@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+   int a;
+   cout << "lutfen bir sayi giriniz" << endl;
+   cin >> a;
+   int b;
+   cout << "lutfen bir sayi giriniz"  << endl;
+   cin >> b;
+   if( a == b){
+       cout << "Bu sayilar esittir" << endl;
+       cout << "Bu sayilar farkli degildir" << endl;
+       cout << "ilk sayi kucuk degildir" << endl;
+       cout << "ikinci sayi kucuk degildir" << endl;
+       cout << "ilk sayi kucuk esittir" << endl;
+       cout << "ikinci sayi kucuk esittir" << endl;
+       
+   }
+   if ( a < b ){
+       cout << "Bu sayilar esit degildir" << endl;
+       cout << "Bu sayilar farklidir"<< endl;
+       cout << "ilk sayi kucuktur" << endl;
+       cout << "ikinci sayi kucuk degildir" << endl;
+       cout << "ilk sayi kucuk esittir" << endl;
+       cout << "ikinci sayi buyuk esittir" << endl;
+       
+   }
+   if ( a > b){
+       cout << "Bu sayilar esit degildir" << endl;
+       cout << "Bu sayilar farklidir"<< endl;
+       cout << "ilk sayi buyuktur" << endl;
+       cout << "ikinci sayi kucuktur" << endl;
+       cout << "ilk sayi buyuk esittir" << endl;
+       cout << "ikinci sayi kucuk esittir" << endl;
+   }
+   
+    return 0;
+}

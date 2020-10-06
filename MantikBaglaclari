@@ -1,0 +1,43 @@
+#include <iostream>
+  using namespace std;
+  int main()
+  {
+      int a,b,x;
+      cout << "Lutfen birinci a sayiyisini giriniz" << endl;
+      cin >> a;
+      cout << "Lutfen ikinci b sayiyisini giriniz" << endl;
+      cin >> b;
+      cout << "Lutfen ucuncu x sayiyisini giriniz" << endl;
+      cin >> x;
+      if( b<a && a<x || b>a && a>x ){
+          cout << "a sayisi b ve x sayisinin arasindadir" << endl;
+      }
+      else{
+          cout << "a sayisi b ve x sayisinin arasinda bir sayi degildir" << endl;
+      }
+      if( a==b && a < x ){
+          cout << "a sayisi b'ye esittir x'den kucuktur" << endl;
+      }
+      else{
+          cout << "a sayisi b'ye esit degildir veya a sayisi x'den buyuktur" << endl;
+      }
+      if( a > b ){
+          cout << "a sayisi b'den buyuktur" << endl;
+      }
+      else{
+          cout << "a sayisi b'den kucuktur veya esittir" << endl;
+      }
+      if( a > x ){
+          cout << "a sayisi x'den buyuktur" << endl;
+      }
+      else{
+          cout << "a sayisi x'den kucuktur veya esittir" << endl;
+      }
+      if(a==b && x==a){
+          cout << "uc sayida birbirine esittir" << endl;
+      }
+      else{
+          cout << "uc sayi birbirine esit degildir" << endl;
+      }
+      return 0;
+  }

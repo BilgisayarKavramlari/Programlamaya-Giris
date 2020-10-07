@@ -1,0 +1,29 @@
+#include <iostream>
+ using namespace std;
+ int main()
+ {
+  int a;
+  cout << "Lutfen birinci sayiyi giriniz" << endl;
+  cin >> a;
+  int b;
+  cout << "Lutfen ikinci sayiyi giriniz" << endl;
+  cin >> b;
+  int c;
+  cout << "Lutfen ucuncu sayiyi giriniz" << endl;
+  cin >> c;
+   int enbuyuk = a;
+   if(enbuyuk < b)
+   enbuyuk = b;
+   if(enbuyuk < c)
+   enbuyuk = c;
+    int enkucuk = a;
+    if(enkucuk > b)
+    enkucuk = b;
+    if(enkucuk >c)
+    enkucuk = c;
+     cout << "En buyuk sayi:" << enbuyuk << endl;
+     cout << "En kucuk sayi:" << enkucuk << endl;
+     
+     return 0;  
+   }
+ 

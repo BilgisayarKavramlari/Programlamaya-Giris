@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+ 
+ using namespace std;
+ int main()
+{
+ int a,b,c;
+   cout << "Lutfen birinci dik kenari giriniz:" << endl;
+   cin >> a;
+   cout << "Lutfen ikinci dik kenari giriniz:" << endl;
+   cin >> b;
+     c = sqrt(a*a + b*b);
+      cout << "Ucgenin alani:" << (float)a*b/2 <<endl;
+       cout << "Ucgenin cevresi:" << a+b+c <<endl;
+   return 0;
+}
+ 

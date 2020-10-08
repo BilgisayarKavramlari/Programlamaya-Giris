@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+int mesafe,hiz;
+cout << "Lutfen mesafeyi giriniz(km)" << endl;
+cin >>mesafe;
+cout << "Lutfen hizi giriniz(km)" << endl;
+cin >>hiz;
+cout << "Tahmini varis suresi" << (int)mesafe/hiz << "saat";
+float dakikakismi = (float)mesafe/hiz - (int)mesafe/hiz;
+int dakika = dakikakismi*60;
+cout << dakika << "dakikadir" << endl;
+}

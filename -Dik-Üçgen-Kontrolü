@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+  using namespace std;
+   int main()
+   {
+       int a,b,c;
+       cout << "Lutfen ucgenin birinci kenarini giriniz" <<endl;
+       cin >> a;
+       cout << "Lutfen ucgenin ikinci kenarini giriniz" <<endl;
+       cin >> b;
+       cout << "Lutfen ucgenin ucuncu kenarini giriniz" <<endl;
+       cin >> c;
+       if( a*a+b*b==c*c || b*b + c*c== a*a || c*c+a*a==b*b ){
+           cout << "Bu bir dik ucgendir" <<endl;
+       }
+           else{
+               cout << "Bu bir dik ucgen degildir" <<endl;
+           
+       }
+       return 0;
+   }

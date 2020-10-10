@@ -1,0 +1,11 @@
+#include <iostream>
+
+ using namespace std;
+
+ int main()
+ {
+        for(int ardisik=100;ardisik>0;ardisik--)
+            if(ardisik%13==0)
+        cout << ardisik << endl;
+  
+ }

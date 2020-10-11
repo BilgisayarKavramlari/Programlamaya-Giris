@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+
+int main()
+{
+    int a,s,d,f;
+    
+    a=15;
+    s=5;
+    d=100;
+    f=2;
+    while(a<100){
+    
+    cout << a << '\t' << s << '\t' << d << '\t' << f << endl;
+    a+=15;
+    s+=5;
+    d-=10;
+    f*=2;
+    }
+    
+}
+  

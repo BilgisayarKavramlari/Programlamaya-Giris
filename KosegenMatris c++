@@ -1,0 +1,21 @@
+#include <iostream>
+                    
+using namespace std;
+ 
+int main()
+{         
+   int basamak ;
+    cout << "Lutfen basamak degerini giriniz" << endl;
+        cin >> basamak;
+            for(int a=1;a<basamak;a++){
+                for(int b=1;b<basamak;b++){
+                    if(a==b)
+                        cout << " 1 ";
+                        else
+                            cout << " 0 ";
+    }
+    cout << endl;
+   }       
+   return 0;
+     
+}

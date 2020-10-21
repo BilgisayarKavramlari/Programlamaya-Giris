@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int faktoriyel(int x) {
+	int carpim = 1;
+	for (int i = x; i > 0; i--) {
+		carpim *= i;
+	}
+	return carpim;
+}
+
+int kombinasyon(int n, int r) {
+	return faktoriyel(n) / (faktoriyel(r) * faktoriyel(n - r));
+
+
+}
+int main()
+{
+	cout << "Lutfen komibnasyonunu almak istediginiz iki sayi giriniz" << endl;
+	int n, r;
+	cin >> n;
+	cin >> r;
+	cout << kombinasyon(n, r) << endl;
+
+	return 0;
+
+	
+}

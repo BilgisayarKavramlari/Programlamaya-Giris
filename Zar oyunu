@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout << "Lutfen kac zar atilacagini giriniz" << endl;
+ 	 int c;
+	cin >> c;
+	srand(time(NULL));
+	int* a = new int(c);
+	int* b = new int(c);
+	int skor = 0;
+	for (int i = 0; i < c; i++) {
+		int z1 = rand()%6 + 1;
+		int z2 = rand() % 6 + 1;
+		a[i] = z1;
+		b[i] = z2;
+		if (z1 > z2) {
+			skor++;
+		}
+		else if (z1 <z2) {
+			skor--;
+		}
+		
+
+	}
+	for (int i = 0; i < c; i++) 
+		cout << a[i] << " ";
+	
+	cout << endl;
+	for (int i = 0; i < c; i++) 
+		cout << b[i] << " ";
+	
+	cout << endl;
+	if (skor > 0) 
+		cout << "Zar 1 kazandi" << endl;
+
+	
+	else if(skor < 0) 
+		cout << "Zar 2 kazandi" << endl;
+	
+	else 
+		cout << "berabere " << endl;
+	
+}

@@ -1,0 +1,13 @@
+#include<iostream>
+#include<locale.h> // Türkçe dil desteği için kullandım bu kütüphaneyi 
+using namespace std;
+int main()
+{
+	int a;
+	a=15;
+	// Desteklenmesini istediğiniz dilli girdim
+	setlocale(LC_ALL,"Turkish");
+	cout<<"Deðer :"<<a<<endl;
+	
+	
+}

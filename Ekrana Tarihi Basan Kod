@@ -1,0 +1,31 @@
+using System;
+
+namespace Uyg2_SabitlerveDegiskenler
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region ReEkrana Tarihi Basan Kod
+            string yil ,ay, gün;
+
+            Console.Write("Lütfen günü giriniz:");
+            gün =Console.ReadLine();
+
+            Console.Write("Lütfen ayını giriniz:");
+            ay = Console.ReadLine();
+            
+            Console.Write("Lütfen yıl giriniz:");
+            yil = Console.ReadLine();
+
+            Console.WriteLine("Gün ay yıl : {0}.{1}.{2}", gün, ay, yil);
+
+            Console.WriteLine("Ay gün yıl : {1}.{0}.{2}", gün, ay, yil);
+
+            Console.WriteLine("Yıl ay gün: : {2}.{1}.{0}", gün, ay, yil);
+            #endregion
+        }
+
+
+    }
+}

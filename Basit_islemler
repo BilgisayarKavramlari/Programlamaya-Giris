@@ -1,0 +1,37 @@
+
+using System;
+
+namespace Uyg2_SabitlerveDegiskenler
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1,n2;
+
+            do
+            { 
+
+                Console.Write("Lutfen birinci sayiyi giriniz: ");
+
+            
+            } while (!int.TryParse(Console.ReadLine(), out n1));
+
+            do
+            {
+
+                Console.Write("Lutfen ikinci sayiyi giriniz:");
+
+
+            } while (!int.TryParse(Console.ReadLine(), out n2));
+
+            Console.WriteLine("Toplam :" + (n1 + n2));
+            Console.WriteLine("Fark :" + (n1 - n2));
+            Console.WriteLine("Çarpim :" + (n1 * n2));
+            Console.WriteLine("Bölüm :" + (n1 / n2));
+            Console.WriteLine("Kalan :" + (n1 % n2));
+             }
+
+
+    }
+}

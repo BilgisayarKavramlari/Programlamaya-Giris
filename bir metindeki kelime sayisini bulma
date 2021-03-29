@@ -1,0 +1,4 @@
+metin=input("metni giriniz:")
+metin_dizisi=metin.split()
+a=len(metin_dizisi)
+print(a)

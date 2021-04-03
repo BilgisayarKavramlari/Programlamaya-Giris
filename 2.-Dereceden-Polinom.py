@@ -1,0 +1,10 @@
+import math
+a = input('a sayısını giriniz')
+ax = int(a)
+b = input('b sayısını giriniz')
+bx = int(b)
+c = input('c sayısını giriniz')
+cx = int(c)
+sonuc = ((ax * ax + (bx ** bx)) + cx * 3)
+sonucx = int(sonuc)
+print(sonucx)

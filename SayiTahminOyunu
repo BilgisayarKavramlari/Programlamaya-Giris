@@ -1,0 +1,18 @@
+#sayı tahmin etme
+
+sayi=[1,3,5]
+
+sayi = int(input("1 ve 5 arası sayı Giriniz : "))
+
+if sayi==1:
+    print(f"Girdiğiniz sayı; {sayi} Tebrikler bildiniz :))")
+
+elif sayi==3:
+    print(f"Girdiğiniz sayı; {sayi} Tebrikler bildiniz :))")
+
+elif sayi==5:
+    print(f"Girdiğiniz sayı; {sayi} Tebrikler bildiniz :))")
+
+else :
+    print("Üzgünüm Bilemediniz :(")
+

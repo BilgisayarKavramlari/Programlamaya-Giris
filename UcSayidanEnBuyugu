@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+int main(){
+int a,b,c;
+printf("lütfen sırasıyla a b ve c için sayı yazınız");
+scanf("%d%d%d", &a, &b, &c);
+if(a>b>c || a>c>b){
+printf("\nen büyük sayı: %d", a);
+}else if(b>a>c || b>c>a){
+printf("\nen büyük sayı: %d", b);
+}else{
+printf("\nen büyük sayı: %d", c);
+}
+if(a<b<c || a<c<b){
+printf("\nen küçük sayı: %d", a);
+}else if(b<a<c || b<c<a){
+printf("\nen küçük sayı: %d", b);
+}else{
+printf("\nen küçük sayı: %d", c);
+}
+getch ();
+return 0;
+}

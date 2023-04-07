@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int a = 5;  // Degisken
+	cout << a;	// Degiskenin bastirilmasi
+
+	return 0;
+}

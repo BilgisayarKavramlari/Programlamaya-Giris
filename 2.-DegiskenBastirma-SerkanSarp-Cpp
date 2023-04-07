@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int a = 0;    // Okunacak degiskenin once 0 olarak olusturulması (C++ icin gereklidir)
+	cout << "Lutfen bir sayi degeri giriniz: ";   // Turkce'nin duzgun kullanilarak istegin yazdirilmasi
+  cin >> a;   // Degerin okunmasi
+  
+  // cout << "Girdiginiz deger: " // Ekrana yazdırmayı sonra gerekebileceği için girdik ama istenmediği için devre dışı bıraktık
+
+	return 0;
+}

@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace degiskenbastir
+{
+    internal class displaydate
+    {
+        static void Main(string[] args)
+         {
+            String Text = DateTime.Now.ToString();
+
+           Console.WriteLine(Text);
+        }
+    }
+}
